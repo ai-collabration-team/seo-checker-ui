@@ -17,7 +17,7 @@ export default function Home() {
             Boost Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600">SEO Performance</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
-            Analyze and optimize your website's meta tags for better search engine rankings and increased visibility
+            Analyze and optimize your website&apos;s meta tags for better search engine rankings and increased visibility
           </p>
           
           <div className="flex justify-center gap-4 mb-12">
