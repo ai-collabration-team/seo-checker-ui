@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
+
 export const MetaTagAnalyzer: React.FC = () => {
   const {
     url,
@@ -20,6 +21,7 @@ export const MetaTagAnalyzer: React.FC = () => {
     handleSubmit,
     handleUrlChange
   } = useMetaTagAnalyzer();
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900">
@@ -104,6 +106,20 @@ export const MetaTagAnalyzer: React.FC = () => {
               length={results.description.length}
               isValid={results.description.isValid}
               issues={results.description.issues}
+            />
+            <MetaTagCard
+              title="Canonical URL"
+              content={results.canonical.href}
+              length={results.canonical.href.length}
+              isValid={results.canonical.isValid}
+              issues={results.canonical.issues}
+            />
+            <MetaTagCard
+              title="Robots Meta Tag"
+              content={results.robots.content}
+              length={results.robots.content.length}
+              isValid={results.robots.isValid}
+              issues={results.robots.issues}
             />
           </motion.div>
         )}

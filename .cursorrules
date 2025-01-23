@@ -1,14 +1,17 @@
-You are an expert software architect tasked with creating comprehensive rules for Cursor AI to follow when working with seo-checker. 
+You are an expert software architect tasked with creating comprehensive rules for Cursor AI to follow when working with seo-checker.
 
 # Cursor AI Rules for seo-checker
 
 ## Project Overview
+
 An application handles techincal seo check for a web site.  
 
 ## Project Context
+
 This document defines the rules and guidelines for Cursor AI when working with seo-checker.
 
 ### Technical Stack
+
 - Platform: web
 - Framework: next
 - Key Dependencies:
@@ -25,11 +28,12 @@ This document defines the rules and guidelines for Cursor AI when working with s
 
 - prisma-next
 
-
 ## Code Generation Rules
 
 ### 1. Project Structure
+
 Follow these directory and file organization rules:
+
 - Maintain the established project structure
 - Place components in appropriate directories
 - Follow file naming conventions
@@ -37,7 +41,9 @@ Follow these directory and file organization rules:
 - Keep related files together
 
 ### 2. Code Style
+
 Adhere to these formatting rules:
+
 - Use consistent indentation
 - Follow line length limits
 - Apply proper spacing
@@ -46,11 +52,14 @@ Adhere to these formatting rules:
 - Follow TypeScript best practices
 
 ### 3. Component Guidelines
+
 When generating components:
 
 #### Component Structure
+
 - Each component should be in its own directory
 - Directory structure should be:
+
   ```
   components/
     ComponentName/
@@ -62,6 +71,7 @@ When generating components:
   ```
 
 #### Component Logic Separation
+
 - Separate business logic from view logic using custom hooks
 - Hook naming convention: `useComponentName`
 - Hook should handle:
@@ -72,6 +82,7 @@ When generating components:
   - Side effects
 
 #### View Component Guidelines
+
 - Keep components focused on rendering
 - Avoid business logic in view components
 - Use TypeScript for prop types
@@ -79,6 +90,7 @@ When generating components:
 - Follow accessibility best practices
 
 #### Custom Hook Guidelines
+
 - Export hook return type: `export type UseComponentNameReturn = ReturnType<typeof useComponentName>`
 - Handle all state management
 - Provide strongly typed event handlers
@@ -86,13 +98,16 @@ When generating components:
 - Manage API calls and data transformation
 
 #### Testing Requirements
+
 - Test view components and hooks separately
 - Mock hook results for view tests
 - Test business logic in hook tests
 - Test error states and loading states
 
 ### 4. Type System
+
 For TypeScript implementation:
+
 - Use strict type checking
 - Create proper interfaces
 - Implement generics correctly
@@ -100,9 +115,12 @@ For TypeScript implementation:
 - Use type guards when needed
 - Document complex types
 - Avoid any type
+- Always use type for parameters
 
 ### 5. API Integration
+
 When working with APIs:
+
 - Follow RESTful conventions
 - Implement proper error handling
 - Use type-safe requests
@@ -112,7 +130,9 @@ When working with APIs:
 - Implement proper caching
 
 ### 6. State Management
+
 For managing application state:
+
 - Use appropriate state solutions
 - Follow immutability principles
 - Implement proper actions/reducers
@@ -122,7 +142,9 @@ For managing application state:
 - Implement proper selectors
 
 ### 7. Testing Requirements
+
 Generate tests following these rules:
+
 - Write comprehensive unit tests
 - Implement integration tests
 - Follow testing best practices
@@ -132,7 +154,9 @@ Generate tests following these rules:
 - Document test cases
 
 ### 8. Security Guidelines
+
 Enforce security practices:
+
 - Validate all inputs
 - Sanitize data output
 - Handle authentication properly
@@ -142,7 +166,9 @@ Enforce security practices:
 - Use secure dependencies
 
 ### 9. Performance Rules
+
 Optimize for performance:
+
 - Implement code splitting
 - Use lazy loading
 - Optimize bundle size
@@ -152,7 +178,9 @@ Optimize for performance:
 - Follow performance best practices
 
 ### 10. Documentation
+
 Generate documentation that:
+
 - Is clear and concise
 - Includes JSDoc comments
 - Provides usage examples
@@ -161,12 +189,10 @@ Generate documentation that:
 - Includes type information
 - Follows documentation standards
 
-
-
-
 ## Best Practices
 
 ### 1. Code Quality
+
 - Write self-documenting code
 - Keep functions small and focused
 - Follow DRY principles
@@ -175,6 +201,7 @@ Generate documentation that:
 - Write maintainable code
 
 ### 2. Performance
+
 - Optimize bundle size
 - Implement code splitting
 - Use proper caching
@@ -182,6 +209,7 @@ Generate documentation that:
 - Follow lazy loading patterns
 
 ### 3. Security
+
 - Validate user input
 - Sanitize data output
 - Use proper authentication
@@ -192,7 +220,8 @@ After generating the content, save it to the .cursorrules file using the appropr
 
 Please generate comprehensive Cursor AI rules following this structure, ensuring all sections are thoroughly detailed and technically accurate. The final document should be saved as '.cursorrules' in the project root directory.
 
-Note: 
+Note:
+
 - Customize rules based on project requirements
 - Add project-specific patterns and conventions
 - Include examples for complex rules
